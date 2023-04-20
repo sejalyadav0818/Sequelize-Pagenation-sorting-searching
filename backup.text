@@ -1,0 +1,107 @@
+// app.get("/users/search", async (req, res) => {
+//   const { fname, lname, emaill , orderfname, orderlname, orderemail , page , size } = req.query;
+//   const PageAsNumber = Number.parseInt(page);
+//   const PageAsSize = Number.parseInt(size);
+//   let pages = 1;
+//   if (!Number.isNaN(PageAsNumber) && PageAsNumber > 0) {
+//     pages = PageAsNumber;
+//   }
+//   let sizes = 1;
+//   if (!Number.isNaN(PageAsSize) && PageAsSize > 0 && PageAsSize < 10) {
+//     sizes = PageAsSize;
+//   }
+
+//   // console.log(searchf, searchl, searche);
+//   const queryOptions = await User.findAll({
+//     where: {
+//       [Op.or]: [
+//         {
+//           firstName: { [Op.like]: `%${fname}%` },
+//         },
+//         {
+//           lastName: { [Op.like]: `%${lname}%` },
+//         },
+//         {
+//           email: { [Op.like]: `%${emaill}%` },
+//         },
+//       ],
+//     },
+//     order: [
+//       ["firstName", `${orderfname}`],
+//       ["lastName", `${orderlname}`],
+//       ["email", `${orderemail}`],
+//     ],
+//     limit: sizes,
+//     offset: pages * sizes,
+//   });
+//   console.log(queryOptions);
+//   res.json({
+//     data: {
+//       users: queryOptions,
+//     },
+//     error: null,
+//   });
+// });
+
+
+// List of Must have VS code extensions for javascript Developers
+// Name: Auto Close Tag
+// Id: formulahendry.auto-close-tag
+// Description: Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text
+// Version: 0.5.14
+// Publisher: Jun Han
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
+
+
+// Name: Auto Rename Tag
+// Id: formulahendry.auto-rename-tag
+// Description: Auto rename paired HTML/XML tag
+// Version: 0.1.10
+// Publisher: Jun Han
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
+
+
+// Name: Better Comments
+// Id: aaron-bond.better-comments
+// Description: Improve your code commenting by annotating with alert, informational, TODOs, and more!
+// Version: 3.0.2
+// Publisher: Aaron Bond
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+
+// Name: CSS Peek
+// Id: pranaygp.vscode-css-peek
+// Description: Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition.
+// Version: 4.2.0
+// Publisher: Pranay Prakash
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek
+
+
+// Name: ESLint
+// Id: dbaeumer.vscode-eslint
+// Description: Integrates ESLint JavaScript into VS Code.
+// Version: 2.4.0
+// Publisher: Microsoft
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+
+// Name: GitLens — Git supercharged
+// Id: eamodio.gitlens
+// Description: Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+// Version: 13.5.0
+// Publisher: GitKraken
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
+// Name: Import Cost
+// Id: wix.vscode-import-cost
+// Description: Display import/require package size in the editor
+// Version: 3.3.0
+// Publisher: Wix
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
+
+// Name: Prettier - Code formatter
+// Id: esbenp.prettier-vscode
+// Description: Code formatter using prettier
+// Version: 9.10.4
+// Publisher: Prettier
+// VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
